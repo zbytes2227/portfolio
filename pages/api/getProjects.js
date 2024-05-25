@@ -19,8 +19,10 @@ const handler = async (req, res) => {
         return res.status(404).json({ success: false, msg: "Project not found." });
       }
 
+  
+  return res.status(200).json({ success: true, Project: foundProject });
+
       // Return the details of the found card as a JSON response
-      return res.status(200).json({ success: true, Project: foundProject });
     } catch (err) {
       console.error(err);
       return res.status(500).json({ success: false, msg: "Server error. Contact the Developers." });

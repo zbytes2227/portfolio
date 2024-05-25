@@ -27,13 +27,14 @@ const handler = async (req, res) => {
     }
   } else if (req.method === "GET") {
     try {
-
+   
 
       // Find all Projects in the database
       const allProjects = await Projects.find({}, { name: 1, heading: 1, content: 1, blog: 1, _id: 0 }); // Query to select only specific fields
 
+        return res.status(200).json({ success: true, Projects: allProjects });
+
       // Return the found Projects as a JSON response
-      return res.status(200).json({ success: true, Projects: allProjects });
     } catch (err) {
       console.error(err);
       return res.status(500).json({ success: false, msg: "Server error. Contact the Developers." });

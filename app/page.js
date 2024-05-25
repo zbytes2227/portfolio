@@ -38,7 +38,7 @@ export default function Home({ searchParams }) {
 
 					<div className="my-2 text-center animate-fade-in">
 					
-						<h2 className="md:text-lg text-sm px-6 font-medium text-zinc-400 mt-4"> <span className="text-green-400">zbytes@UbuntuVM:~$</span>
+						<h2 className="md:text-lg text-sm px-6 font-medium text-zinc-400 mt-4"> <span className="text-green-400">zbytes@UbuntuVM:~${' '}</span>
 						  A student 🧑‍💻 pursuing a Diploma in Computer Science & Engineering, <br/> specializing in MERN stack development and learning Data Science & Machine Learning📊.
 </h2>
 					</div>

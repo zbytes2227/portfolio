@@ -1,4 +1,5 @@
 
+import BackgroundMusic from "@/components/music";
 import "./globals.css";
 import BackgroundVideo from "@/components/video";
 
@@ -11,10 +12,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body ><div className="relative">
-      <BackgroundVideo />
-      <div className="relative z-10">{children}</div>
-    </div></body>
-      
+        <BackgroundVideo />
+        <BackgroundMusic />
+        <div className="relative z-10">{children}</div>
+      </div></body>
+
     </html>
   );
 }

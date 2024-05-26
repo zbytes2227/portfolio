@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar'
+import Image from 'next/image'
 import React from 'react'
-
+import me from '../../public/me.png'
 const page = () => {
   return (
     <>
@@ -18,7 +19,7 @@ const page = () => {
         <p className="mb-8 leading-relaxed text-gray-300 text-lg"><span className='text-red-500 font-semibold'>zbytes@UbuntuVM:~/Skill Box${" "}</span>Reactjs,Nextjs,MongoDB,Nodejs,Python,TailwindCSS,Bootstrap,Arduino,ESP8266,ESP32</p> */}
       </div>
       <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-        <img className="object-cover object-center rounded mb-5" alt="hero" src="me.png"/>
+        <Image placeholder='blur' height={500} width={500} className="object-cover object-center rounded mb-5" alt="hero" src={me}/>
       </div>
     </div>
   </section>

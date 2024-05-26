@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
         <meta property="og:URL" content="https://zbytes.vercel.app/" />
         <meta property="og:image" content="https://zbytes.vercel.app/192.png" />
         <meta name="keywords" content="Ujjwal Kushwaha, zbytes, zbytes2227, FGP Raebareli,ujjwal, zbyte" />
-        <meta property="og:description" content="A student pursuing a Diploma in Computer Science & Engineering,specializing in MERN stack development and learning Data Science & Machine Learning" />
+        <meta property="og:description" content="MERN Developer | IOT | AI/ML | Diploma CSE" />
         <meta name="robots" content="index, follow" />
       </head>
       <body ><div className="relative">
@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
           speed={200}
         />
         <BackgroundVideo />
-        <BackgroundMusic />
+        {/* <BackgroundMusic /> */}
         <div className="relative z-10">{children}</div>
       </div></body>
 

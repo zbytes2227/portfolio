@@ -19,7 +19,7 @@ const page = () => {
 
 
   const openModal = () => {
-    toast.error(`I social distance from Distractions`, {
+    toast.error(`I scroll away from Distractions.`, {
       position: "top-center",
       autoClose: 1500,
       hideProgressBar: false,
@@ -64,7 +64,7 @@ const page = () => {
               Instagram
             </a>
 
-            <a onClick={openModal} className="flex flex-col items-center justify-center transition-transform transform hover:scale-110 m-1">
+            <a onClick={openModal} className="hidden md:flex flex-col items-center justify-center transition-transform transform hover:scale-110 m-1">
               <img src="x.png" alt="Image 1" className="h-12 w-12 mr-2" />
               Twitter(x)
             </a>

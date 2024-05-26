@@ -5,6 +5,10 @@ import React, { Suspense, useEffect, useRef } from "react";
 import { Fade, Flip, Roll, Slide, Zoom } from "react-awesome-reveal";
 import Navbar from "@/components/Navbar";
 import { Typewriter } from 'react-simple-typewriter'
+import im0 from  '../public/m0.png'
+import im1 from  '../public/m1.png'
+import im2 from  '../public/m2.png'
+import im3 from  '../public/m3.png'
 
 export default function Home({ searchParams }) {
 
@@ -48,7 +52,7 @@ export default function Home({ searchParams }) {
 							<Zoom>
 								<a href="/projects" className="flex flex-col items-center justify-center transition-transform transform hover:scale-110 border border-white rounded-lg p-2 w-24 h-24 hover:cursor-pointer">
 									<div className="flex flex-col items-center">
-										<img src="m1.png" alt="Image 1" className="h-16 w-16" />
+										<Image height={500} width={500} placeholder="blur" src={im0} alt="Image 1" className="h-16 w-16" />
 										<span>M.E.R.N</span>
 									</div>
 								</a>
@@ -56,7 +60,7 @@ export default function Home({ searchParams }) {
 							<Zoom>
 								<a href="projects" className="flex flex-col items-center justify-center transition-transform transform hover:scale-110 border border-white rounded-lg p-3 w-24 h-24 hover:cursor-pointer">
 									<div className="flex flex-col items-center">
-										<img src="m0.png" alt="Image 1" className="h-16 w-16" />
+									<Image height={500} width={500} placeholder="blur" src={im1} alt="Image 1" className="h-16 w-16" />
 										<span>AI / ML</span>
 									</div>
 								</a>
@@ -64,7 +68,7 @@ export default function Home({ searchParams }) {
 							<Zoom>
 								<a href="projects" className="flex flex-col items-center justify-center transition-transform transform hover:scale-110 border border-white rounded-lg p-3 w-24 h-24 hover:cursor-pointer">
 									<div className="flex flex-col items-center">
-										<img src="m2.png" alt="Image 1" className="h-16 w-16" />
+									<Image height={500} width={500} placeholder="blur" src={im2} alt="Image 1" className="h-16 w-16" />
 										<span>I.O.T</span>
 									</div>
 								</a>
@@ -72,7 +76,7 @@ export default function Home({ searchParams }) {
 							<Zoom>
 								<a href="projects" className="hidden md:flex flex flex-col items-center justify-center transition-transform transform hover:scale-110 border border-white rounded-lg p-3 w-24 h-24 hover:cursor-pointer">
 									<div className="flex flex-col items-center">
-										<img src="m3.png" alt="Image 1" className="h-16 w-16" />
+									<Image height={500} width={500} placeholder="blur" src={im3} alt="Image 1" className="h-16 w-16" />
 										<span>Data Sci.</span>
 									</div>
 								</a>

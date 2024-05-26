@@ -12,7 +12,21 @@ const ContactCard = () => {
     const [Message, setMessage] = useState("")
     const [Loading, setLoading] = useState(false);
 
+
+    function vibrate() {
+        // Check if the vibration API is supported
+        if ("vibrate" in navigator) {
+          // Vibrate for 200ms
+          navigator.vibrate(200);
+        } else {
+          console.log("Vibration API not supported");
+        }
+      }
+
+
+
     async function submitQuery(e) {
+        vibrate();
         try {
             setLoading(true);
             e.preventDefault();
@@ -30,6 +44,7 @@ const ContactCard = () => {
 
             const data = await fetch_api.json();
             if (data.success) {
+                vibrate();
                 toast.success(`${data.msg}`, {
                     position: "top-center",
                     autoClose: 1000,

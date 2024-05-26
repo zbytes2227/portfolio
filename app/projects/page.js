@@ -36,7 +36,7 @@ const App = () => {
       <Navbar />
 
       <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 text-center md:text-5xl lg:text-6xl dark:text-white">Take a Look at my <span className="text-blue-600 dark:text-blue-500">#Projects</span>.</h1>
-      <p className="text-lg font-normal text-center text-gray-500 lg:text-xl dark:text-gray-400">Here are some of my Projects that I&apos;ve made using my MERN Skills and some of my IoT Projects, Take a look and don&apos;nt forget to give your feedback on the contact form, Thanks.</p>
+      <p className="text-sm md:text-lg font-normal text-center text-gray-500 lg:text-xl dark:text-gray-400 px-3">Here are some of my Projects that I&apos;ve made using my MERN Skills and some of my IoT Projects, Take a look and don&apos;nt forget to give your feedback on the contact form, Thanks.</p>
 
       <div className="flex flex-wrap justify-center md:mx-14">
         <Suspense fallback={<div>Loading...</div>}>

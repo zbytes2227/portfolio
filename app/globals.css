@@ -14,4 +14,16 @@ body{
     }
   } 
   
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 117, 190);
+  border-radius: 10px;
+}
   
